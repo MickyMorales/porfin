@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOYOTA COROLLA</title>
+    <link rel="stylesheet" href="css/toyota.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TOYOTA COROLLA</h1>
+        <div class="gallery">
+            <div>
+                <center><img src="toyota.jfif" alt="Toyota" onclick="openModal(this.src)"></center>
+                <div class="description">Toyota corolla</div>
+                <P>Había una vez un automóvil llamado Toyota Corolla, un compañero fiel en la vida de muchas personas. Desde su primer día en la carretera, se destacó por su elegante diseño. Con líneas suaves y aerodinámicas, el Corolla atraía miradas mientras recorría las calles de la ciudad. Sus faros LED brillaban con un aire moderno, iluminando el camino hacia nuevas aventuras.
+
+                    Dentro de su interior, el Corolla ofrece un refugio de comodidad. Los asientos estaban diseñados ergonómicamente, proporcionando un viaje placentero tanto para el conductor como para los pasajeros. Cada rincón del automóvil estaba decorado con materiales de calidad que hablaban de su atención al detalle.
+                    
+                    Pero lo que realmente hacía especial al Corolla era su corazón: un motor de 4 cilindros que combinaba potencia y eficiencia. Cada vez que giraba la llave, el motor rugía suavemente, listo para llevar a sus ocupantes a cualquier destino. Y con su transmisión automática CVT, cada viaje se sentía como un suave paseo por la carretera.
+                    
+                    Los pasajeros disfrutarán de la tecnología avanzada que ofrece el Corolla. Con una pantalla táctil que conectaba sus dispositivos a la perfección, podía escuchar su música favorita o utilizar mapas para explorar nuevos lugares. Todo estaba al alcance de un toque, convirtiendo cada trayecto en una experiencia entretenida.
+                    
+                    La seguridad también era primordial para el Corolla. Equipado con el sistema Toyota Safety Sense, contaba con características como el control de crucero adaptativo y la asistencia de mantenimiento de carril. Cada viaje se realizaba con la tranquilidad de saber que todos estaban protegidos.
+                    
+                    A medida que el Corolla se deslizaba por la carretera, mostraba su capacidad para llevar a todos con comodidad. El maletero amplio estaba siempre listo para las compras, los viajes o cualquier aventura inesperada. Y en los asientos traseros, los pasajeros disfrutarán de un espacio más que suficiente para estirar las piernas.
+                    
+                    Con el tiempo, el Corolla se convirtió en un símbolo de confiabilidad. Sus dueños sabían que, sin importar la distancia o el destino, siempre podían confiar en su fiel compañero para llevarlos a donde necesitaban ir. Así, el Toyota Corolla continuó su viaje, uniendo corazones y creando recuerdos en cada kilómetro.
+                    </P>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para imágenes -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        function openModal(src) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = src;
+        }
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>

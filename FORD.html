@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOMÓVIL FORD</title>
+    <link rel="stylesheet" href="css/ford.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ford</h1>
+        <div class="gallery">
+            <div>
+                <center><img src="mustang.jfif" alt="ford" onclick="openModal(this.src)"></center>
+                <div class="description">Ford Mustang</div>
+                <p>Había una vez un automóvil llamado Ford Mustang, un verdadero ícono de la carretera. Desde su nacimiento en 1964, el Mustang no solo fue un vehículo; se convirtió en un símbolo de libertad y aventura. Su diseño exterior, con líneas musculosas y una parrilla frontal audaz, capturaba la atención de todos mientras recorría las calles con su rugido potente.
+
+                    Cada vez que giraban la llave, el corazón del Mustang, un robusto motor V8, cobraba vida. La emoción se apoderaba del conductor al pisar el acelerador, sintiendo cómo el coche respondía con fuerza y ​​agilidad. Con opciones de transmisión manual y automática, cada viaje se transformaba en una experiencia de pura adrenalina, ya fuera en una carretera abierta o en una serpenteante ruta de montaña.
+                    
+                    El interior del Mustang era un refugio de confort y tecnología. Equipado con un sistema de infoentretenimiento Ford SYNC, los pasajeros podrían disfrutar de su música favorita o navegar por rutas desconocidas, todo al alcance de un toque. Los asientos, diseñados para ofrecer comodidad en cada viaje, hacían que incluso los trayectos más largos fueran agradables.
+                    
+                    La seguridad también tenía un lugar destacado en este automóvil legendario. Con características avanzadas como el control de crucero adaptativo y la asistencia de estacionamiento, el Mustang era tanto un compañero emocionante como un aliado responsable en la carretera. Su estructura robusta brindaba tranquilidad a sus ocupantes, permitiéndoles disfrutaran del viaje sin preocupaciones.
+                    
+                    A medida que el Mustang recorría las carreteras, su espíritu aventurero se hacía evidente. Daba la bienvenida a la personalización, permitiendo a sus dueños adaptar el vehículo a su propio estilo, ya sea con colores vibrantes o accesorios únicos. Cada Mustang en la carretera contaba una historia diferente.
+                    
+                    Con el paso de los años, el Ford Mustang se convirtió en un símbolo de la cultura automotriz estadounidense. Capturó la esencia de la libertad y la emoción, uniendo a generaciones de entusiastas que compartían la misma pasión por la velocidad y el diseño.
+                    
+                    Así, el Mustang continuó su legado, un automóvil que no solo llevaba a las personas de un lugar a otro, sino que también las inspiraba a soñar, a explorar ya vivir la vida.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para imágenes -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        function openModal(src) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = src;
+        }
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>

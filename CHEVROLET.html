@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEVROLET</title>
+    <link rel="stylesheet" href="css/chevrolet.css">
+</head>
+<body>
+    <header>
+        <h1>Chevrolet</h1>
+    </header>
+
+    <section>
+        <h2>Características del Ford Mustang</h2>
+        <p></p>
+    </section>
+
+    <section class="galeria">
+       <div class="galeria-imagenes">
+            <div class="imagen">
+                <center><img src="camaro.jfif" alt="chevrolet" onclick="mostrarImagen(this)"></center>
+                <p>Había una vez un automóvil llamado Chevrolet Camaro, un verdadero guerrero en el mundo de los coches deportivos. Desde su llegada en 1966, el Camaro capturó la atención de los amantes de la velocidad y el diseño audaz. Con un exterior musculoso y líneas agresivas, se destacaba en cada carretera, como un depredador listo para la acción.
+
+                    Cada vez que su dueño giraba la llave, el poderoso motor cobraba vida, ya fuera un ágil 4 cilindros turboalimentado, un robusto V6 o el imponente V8. El sonido del motor resonaba en el aire, un rugido que promete aventuras emocionantes. Con opciones de transmisión manual y automática, cada viaje se convertiría en una oportunidad para experimentar la adrenalina y la emoción.
+                    
+                    El Camaro no solo era un espectáculo en la carretera, sino también un refugio de tecnología y confort. Su interior contaba con un sistema de infoentretenimiento de última generación, donde los pasajeros podían conectar sus dispositivos y disfrutar de su música favorita. Los asientos deportivos, diseñados para ofrecer soporte en cada curva, hacían que cada trayecto fuera placentero, incluso en las rutas más desafiantes.
+                    
+                    La seguridad nunca se pasaba por alto. Con tecnologías de asistencia al conductor, como el monitoreo de punto ciego y la alerta de colisión frontal, el Camaro ofrece tranquilidad mientras sus ocupantes disfrutan de la velocidad. Su estructura robusta fue diseñada para proteger, permitiendo a sus dueños concentrarse en la carretera y en la emoción del momento.
+                    
+                    A medida que el Camaro avanzaba, su espíritu de personalización brillaba. Los propietarios podían elegir entre una amplia gama de colores y accesorios, adaptando el vehículo a su propio estilo único. Cada Camaro en la carretera contaba una historia distinta, reflejando la personalidad de su conductor.
+                    
+                    A lo largo de los años, el Chevrolet Camaro se convirtió en un símbolo de rendimiento y pasión por la conducción. No solo era un automóvil; Era un compañero de aventuras, un símbolo de libertad y emoción. Así, el Camaro continuó su legado, llevando a sus dueños hacia nuevos horizontes, siempre listo para la próxima carrera, siempre listo para la próxima historia.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="imagen-grande" class="imagen-grande">
+        <span onclick="cerrarImagen()">&times;</span>
+        <img class="imagen-contenido" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        function mostrarImagen(elemento) {
+            var modal = document.getElementById("imagen-grande");
+            var img = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            
+            modal.style.display = "block";
+            img.src = elemento.src;
+            captionText.innerHTML = elemento.alt;
+        }
+
+        function cerrarImagen() {
+            var modal = document.getElementById("imagen-grande");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
+

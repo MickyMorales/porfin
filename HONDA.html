@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legumbres</title>
+    <link rel="stylesheet" href="css/honda.css">
+    
+</head>
+<body>
+    <header>
+        <h1>HONDA CIVIC</h1>
+    </header>
+
+    <section>
+    </section>
+
+    <section class="galeria">
+        <h2>Honda</h2>
+        <div class="galeria-imagenes">
+            <div class="imagen">
+                <center><img src="civic.jfif" alt="Honda Civic" onclick="mostrarImagen(this)"></center>
+                <p>
+                    Cada vez que su dueño giraba la llave, el motor de 4 cilindros se encendía con suavidad, listo para llevarlos a nuevas aventuras. El Civic era conocido por su eficiencia, combinando potencia y ahorro de combustible, lo que lo convertía en el aliado perfecto para los viajes diarios y las escapadas de fin de semana.
+                    
+                    El interior del Honda Civic era un refugio de comodidad y tecnología. La pantalla táctil del sistema de infoentretenimiento iluminaba el tablero, permitiendo a los pasajeros acceder fácilmente a su música favorita y navegar por las rutas. Los asientos, diseñados ergonómicamente, brindan comodidad en cada viaje, ya fuera de un corto trayecto al trabajo o un viaje largo por carretera.
+                    
+                    La seguridad era una prioridad para el Civic. Equipado con el sistema Honda Sensing, contaba con características como el control de crucero adaptativo y la asistencia de mantenimiento de carril. Cada kilómetro recorrido se hacía con la tranquilidad de saber que todos estaban protegidos.
+                    
+                    A medida que el Civic avanzaba, su manejo ágil y su chasis bien equilibrado hacían que cada giro en la carretera fuera una experiencia placentera. La suspensión absorbería las imperfecciones del camino, asegurando que todos los ocupantes disfrutaran del trayecto.
+                    
+                    Con el tiempo, el Honda Civic se ganó una reputación de confiabilidad. Sus dueños sabían que podían confiar en él, no solo por su durabilidad, sino también por su bajo costo de mantenimiento. Era un vehículo que estaba siempre listo para la próxima aventura, sin importar la distancia.
+                    
+                    Así, el Honda Civic continuó su viaje, uniendo a familias y amigos, creando recuerdos en cada kilómetro recorrido. Era más que un simple automóvil; era un símbolo de libertad y confianza, siempre listo para llevar a sus ocupantes hacia nuevos horizontes.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="imagen-grande" class="imagen-grande">
+        <span onclick="cerrarImagen()">&times;</span>
+        <img class="imagen-contenido" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        function mostrarImagen(elemento) {
+            var modal = document.getElementById("imagen-grande");
+            var img = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            
+            modal.style.display = "block";
+            img.src = elemento.src;
+            captionText.innerHTML = elemento.alt;
+        }
+
+        function cerrarImagen() {
+            var modal = document.getElementById("imagen-grande");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
